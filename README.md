@@ -6,10 +6,10 @@ The purpose of this markdown file is to write down a methodology to solving ever
 
 ## Table of Contents
 
-- LinkedList
-- DFS
-- Tree
-- Graph
+- [LinkedList](https://github.com/rrTong/leet-training#linked-list)
+- [DFS](https://github.com/rrTong/leet-training#dfs)
+- [Tree](https://github.com/rrTong/leet-training#tree)
+- [Graph](https://github.com/rrTong/leet-training#graph)
 
 ## Linked List
 
