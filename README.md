@@ -6,44 +6,17 @@ The purpose of this markdown file is to write down a methodology to solving ever
 
 ## Table of Contents
 
-- [LinkedList](https://github.com/rrTong/leet-training#linked-list)
 - [DFS](https://github.com/rrTong/leet-training#dfs)
+- [Dynamic Programming](https://github.com/rrTong/leet-training#dynamic-programming)
 - [Tree](https://github.com/rrTong/leet-training#tree)
 - [Graph](https://github.com/rrTong/leet-training#graph)
-
-## Linked List
-
-- singly-linked: point forward
-- doubly-linked: point forward and backwards
-- reorder: change where `next` ptr points to
-- deleting node: modify previous node's `next` ptr to skip
-
-### Dummy Node
-
-- dummy node: new node to point to head
-  - lets you access & return head easily
-
-```
-dummy = ListNode(0, head)
-```
-
-### Runner Node (Two Pointers)
-
-- used to locate specific node, since LLs dont have indices
-- walker node (left pointer), runner node (right pointer)
-  - walker starts at dummy
-  - runner starts at N
-  - both move forward at same speed
-    - when runner hits `null`, walker will be at N
-
-```
-left = dummy
-right = head
-
-while right:
-  left = left.next
-  right = right.next
-```
+- [Sliding Window](https://github.com/rrTong/leet-training#sliding-window)
+- [String](https://github.com/rrTong/leet-training#string)
+- [Array](https://github.com/rrTong/leet-training#array)
+- [Linked List](https://github.com/rrTong/leet-training#linked-list)
+- [Matrix](https://github.com/rrTong/leet-training#matrix)
+- [Heap](https://github.com/rrTong/leet-training#heap)
+- [Binary](https://github.com/rrTong/leet-training#binary)
 
 ## DFS
 
@@ -73,6 +46,24 @@ def dfs(visited, graph, node):
             dfs(visited, graph, neighbour)
 
 dfs(visited, graph, 'A')
+```
+
+## Dynamic Programming
+
+- basically DFS + memoization (recursion + caching)
+- break down problem (recurrence relation)
+  - identify base case f(0), f(1)
+  - then implement memoization
+
+```
+memo = {}
+memo[0], memo[1] = 1, 1
+if n < 2:
+  return 1
+else:
+  for i in range(2, n+1):
+    memo[i] = memo[i-1] + memo[i-2]
+  return memo[i]
 ```
 
 ## Tree
@@ -112,6 +103,72 @@ for r in range(rows):
     if grid[r][c] == "1" and (r, c) not in visited:
       bfs(r, c)
 ```
+
+## Sliding Window
+
+- used in iterable data structure (strings, arrays)
+  - contiguous substring/subarray
+- need left and right pointer
+  - right pointer moves forward
+    - if condition not satisfied: left pointer moves forward
+    - right pointer continues to move until end of string/array
+
+```
+charSet = set()
+l = 0
+
+for r in range((len(s))):
+  while s[r] in charSet:
+    charSet.remove(s[l])
+    l += 1
+  charSet.add(s[r])
+  res = max(res, r-1 + 1)
+return res
+```
+
+## String
+
+## Array
+
+## Linked List
+
+- singly-linked: point forward
+- doubly-linked: point forward and backwards
+- reorder: change where `next` ptr points to
+- deleting node: modify previous node's `next` ptr to skip
+
+### Dummy Node
+
+- dummy node: new node to point to head
+  - lets you access & return head easily
+
+```
+dummy = ListNode(0, head)
+```
+
+### Runner Node (Two Pointers)
+
+- used to locate specific node, since LLs dont have indices
+- walker node (left pointer), runner node (right pointer)
+  - walker starts at dummy
+  - runner starts at N
+  - both move forward at same speed
+    - when runner hits `null`, walker will be at N
+
+```
+left = dummy
+right = head
+
+while right:
+  left = left.next
+  right = right.next
+```
+
+## Matrix
+
+## Heap
+
+## Binary
 
 ## Useful Links
 
