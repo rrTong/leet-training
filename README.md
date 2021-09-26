@@ -114,6 +114,16 @@ for r in range(rows):
     - right pointer continues to move until end of string/array
 
 ```
+while r < len(prices):
+  if prices[l] < prices[r]:
+    profit = prices[r] - prices[l]
+    maxP = max(maxP, profit)
+  else:
+    l = r
+  r += 1
+```
+
+```
 charSet = set()
 l = 0
 
