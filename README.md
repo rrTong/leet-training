@@ -54,6 +54,13 @@ dfs(visited, graph, 'A')
 - break down problem (recurrence relation)
   - identify base case f(0), f(1)
   - then implement memoization
+- top-down vs bottom-up
+  - top-down
+    - memoization (caching) + recursion
+  - bottom-up
+    - tabulation (table => array)
+      - store results of subproblems
+      - always iteration over array
 
 ```
 memo = {}
@@ -139,6 +146,8 @@ return res
 ## String
 
 ## Array
+
+- hashmap, sliding window, dp
 
 ## Linked List
 
