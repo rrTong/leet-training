@@ -54,6 +54,13 @@ dfs(visited, graph, 'A')
 - break down problem (recurrence relation)
   - identify base case f(0), f(1)
   - then implement memoization
+- top-down vs bottom-up
+  - top-down
+    - memoization (caching) + recursion
+  - bottom-up
+    - tabulation (table => array)
+      - store results of subproblems
+      - always iteration over array
 
 ```
 memo = {}
@@ -114,6 +121,16 @@ for r in range(rows):
     - right pointer continues to move until end of string/array
 
 ```
+while r < len(prices):
+  if prices[l] < prices[r]:
+    profit = prices[r] - prices[l]
+    maxP = max(maxP, profit)
+  else:
+    l = r
+  r += 1
+```
+
+```
 charSet = set()
 l = 0
 
@@ -129,6 +146,8 @@ return res
 ## String
 
 ## Array
+
+- hashmap, sliding window, dp
 
 ## Linked List
 
