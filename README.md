@@ -185,9 +185,10 @@ while right:
 
 ## Matrix
 
-- [[row] col]
-- row = len(grid)
-- col = len(grid[0])
+- `[[col] row]`
+- `grid[row][col]`
+- `row = len(grid)`
+- `col = len(grid[0])`
 
 ```
 grid = [[0 for j in range(4)] for i in range(3)]
