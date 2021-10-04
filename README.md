@@ -166,6 +166,27 @@ while right:
 
 ## Matrix
 
+- [[row] col]
+- row = len(grid)
+- col = len(grid[0])
+
+```
+grid = [[0 for j in range(4)] for i in range(3)]
+[[0, 0, 0, 0],
+ [0, 0, 0, 0],
+ [0, 0, 0, 0]]
+
+grid[0][1] = 1
+[[0, 1, 0, 0],
+ [0, 0, 0, 0],
+ [0, 0, 0, 0]]
+
+>>> len(grid)
+3
+>>> len(grid[0])
+4
+```
+
 ## Heap
 
 ## Binary
