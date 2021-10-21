@@ -149,6 +149,30 @@ return res
 
 - hashmap, sliding window, dp
 
+### Stack
+
+```
+stack = []
+stack.append('a')
+stack.pop()
+```
+
+### Set
+
+```
+set = set()
+set.add('a')
+set.remove('a')
+```
+
+### Dict
+
+```
+dict = {}
+dict['a'] = '1'
+dict.pop('a')
+```
+
 ## Linked List
 
 - singly-linked: point forward
