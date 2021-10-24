@@ -101,14 +101,14 @@ def printInorder(root):
   - for loop to populate adjacency list
   - if undirected, edges are added twice
 
-```
-rows, cols = len(grid), len(grid[0])
-visited = set()
+### Adjacency List
 
-for r in range(rows):
-  for c in range(cols):
-    if grid[r][c] == "1" and (r, c) not in visited:
-      bfs(r, c)
+```
+for e in edges:
+    if e[0] in adj:
+        adj[e[0]].append(e[1])
+    else:
+        adj[e[0]] = [e[1]]
 ```
 
 ## Sliding Window
@@ -214,6 +214,8 @@ while right:
 - `row = len(grid)`
 - `col = len(grid[0])`
 
+### Matrix Properties
+
 ```
 grid = [[0 for j in range(4)] for i in range(3)]
 [[0, 0, 0, 0],
@@ -229,6 +231,18 @@ grid[0][1] = 1
 3
 >>> len(grid[0])
 4
+```
+
+### Initialize Matrix
+
+```
+rows, cols = len(grid), len(grid[0])
+visited = set()
+
+for r in range(rows):
+  for c in range(cols):
+    if grid[r][c] == "1" and (r, c) not in visited:
+      bfs(r, c)
 ```
 
 ## Heap
