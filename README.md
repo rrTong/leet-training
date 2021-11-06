@@ -249,6 +249,22 @@ for r in range(rows):
 
 ## Binary
 
+### ^ XOR
+
+- number ^ with itself == 0
+- number ^ 0 == number
+
+```
+3 ^ 3
+0
+
+3 ^ 0
+3
+
+2 ^ 4      # 10 ^ 100
+6
+```
+
 ## Useful Links
 
 [Blind Top 75 Curated List](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
