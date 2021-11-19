@@ -298,6 +298,19 @@ for r in range(rows):
 - 0011 &
 - 0001
 
+#### use AND to get far-rightmost bit
+
+```
+101 & 1
+1
+
+10 & 1
+0
+
+1 & 1
+1
+```
+
 ### OR |
 
 - return 1 if either bit input is 1
