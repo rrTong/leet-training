@@ -211,6 +211,82 @@ grid[0][1] = 1
 
 ## Binary
 
+### Left Shift <<
+
+- Equivalent to multiplying a number by 2
+
+```
+2 << 3
+16
+```
+
+- 0000 0010
+- 0001 0000
+
+### Right Shift >>
+
+- Equivalent to dividing a number by 2
+
+```
+8 >> 2
+2
+```
+
+- 1000
+- 0010
+
+### NOT ~
+
+- Switch every bit
+
+```
+~3
+-4
+```
+
+- 0000 0011
+- 1111 1100
+
+### AND &
+
+- return 1 if both bit inputs are 1
+
+```
+5&3
+1
+```
+
+- 0101
+- 0011 &
+- 0001
+
+### OR |
+
+- return 1 if either bit input is 1
+
+```
+5|3
+7
+```
+
+- 0101
+- 0011 |
+- 0111
+
+### XOR ^
+
+- exclusive OR
+- return 1 if bit inputs 1, 0 OR 0, 1
+
+```
+7^5
+2
+```
+
+- 0111
+- 0101 ^
+- 0010
+
 ## Useful Links
 
 [Blind Top 75 Curated List](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
@@ -218,3 +294,5 @@ grid[0][1] = 1
 [NeetCode BLIND-75 Playlist](https://www.youtube.com/playlist?list=PLot-Xpze53ldVwtstag2TL4HQhAnC8ATf)
 
 [Kenny Talks Code](https://www.youtube.com/playlist?list=PLujIAthk_iiO7r03Rl4pUnjFpdHjdjDwy)
+
+[EASY GUIDE TO PERFORM BIT MANIPULATION IN PYTHON](https://www.chubbydeveloper.com/bit-manipulation-python/)
