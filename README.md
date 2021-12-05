@@ -393,3 +393,5 @@ get farmost bit
 [Kenny Talks Code](https://www.youtube.com/playlist?list=PLujIAthk_iiO7r03Rl4pUnjFpdHjdjDwy)
 
 [EASY GUIDE TO PERFORM BIT MANIPULATION IN PYTHON](https://www.chubbydeveloper.com/bit-manipulation-python/)
+
+[A summary: how to use bit manipulation to solve problems easily and efficiently](https://leetcode.com/problems/sum-of-two-integers/discuss/84278/A-summary%3A-how-to-use-bit-manipulation-to-solve-problems-easily-and-efficiently)
