@@ -384,6 +384,37 @@ get farmost bit
 3
 ```
 
+#### a + b
+
+```
+getSum(a, b):
+  if b == 0:
+    return a
+  return getSum(a^b, (a&b)<<1)
+```
+
+```
+a^b, (a&b)<<1
+
+find noncarry, find carries
+
+110  6
+010  2
+
+100, 0100
+
+000, 1000
+
+1000, 0000
+
+---
+
+10011 19
+10111 23
+
+00100, 10011 0
+```
+
 ## Useful Links
 
 [Blind Top 75 Curated List](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
