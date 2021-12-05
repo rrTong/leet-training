@@ -354,6 +354,36 @@ for r in range(rows):
 6
 ```
 
+### Binary Tricks
+
+#### & 1
+
+get farmost bit
+
+```
+101 & 1
+1
+
+10 & 1
+0
+
+1 & 1
+1
+```
+
+#### ^ 0
+
+- number ^ number == 0
+- number ^ 0 == number
+
+```
+3 ^ 3
+0
+
+3 ^ 0
+3
+```
+
 ## Useful Links
 
 [Blind Top 75 Curated List](https://www.teamblind.com/post/New-Year-Gift---Curated-List-of-Top-100-LeetCode-Questions-to-Save-Your-Time-OaM1orEU)
